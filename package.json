@@ -1,0 +1,49 @@
+{
+  "name": "swanners",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "clean": "lerna clean -y",
+    "bootstrap": "lerna bootstrap",
+    "lint": "eslint --ext js,jsx,ts,tsx .",
+    "format": "prettier-eslint --write \"*.{js,jsx,ts,tsx}\"",
+    "test": "lerna run test",
+    "test:app": "lerna run test --scope=@swanners/app --stream",
+    "test:web": "lerna run test --scope=@swanners/web --stream",
+    "test:core": "lerna run test --scope=@swanners/core --stream",
+    "buid:app": "",
+    "buid:web": "lerna run build --scope=@swanners/web --stream",
+    "dev:app": "lerna run start --scope=@swanners/app --stream",
+    "dev:web": "lerna run dev --scope=@swanners/web --stream"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**",
+      "**/react-native",
+      "**/react-native/**",
+      "**/expo",
+      "**/expo/**"
+    ]
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.14",
+    "@typescript-eslint/eslint-plugin": "^4.4.1",
+    "@typescript-eslint/parser": "^4.4.1",
+    "eslint": "^7.11.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.21.4",
+    "eslint-plugin-react-hooks": "^4.1.2",
+    "eslint-plugin-react-native": "^3.10.0",
+    "jest": "^26.5.3",
+    "lerna": "^3.22.1",
+    "prettier": "^2.1.2",
+    "ts-jest": "^26.4.1",
+    "typescript": "^4.0.3"
+  }
+}

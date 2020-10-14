@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render without crashing 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <main
+      class="main"
+    >
+      <div
+        class="css-view-1dbjc4n"
+        data-focusable="true"
+        style="background-color: rgb(0, 0, 255); cursor: pointer; padding: 10px 8px 10px 8px; transition-duration: 0s; transition-property: opacity; user-select: none;"
+        tabindex="0"
+      >
+        <div
+          class="css-text-901oao"
+          dir="auto"
+        >
+          Click here
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+`;
